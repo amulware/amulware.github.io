@@ -14,13 +14,13 @@ $spacing-unit:     30px !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    900px !default;
+
+$side-bar-width: 33%;
 
 $on-palm:          600px !default;
-$on-laptop:        800px !default;
 
-$on-medium:        $on-palm !default;
-$on-large:         $on-laptop !default;
+$on-large:         $content-width;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -33,6 +33,24 @@ $on-large:         $on-laptop !default;
 // approach, whereas media queries used elsewhere now use min-width.
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin media-on-palm() {
+  @media screen and (max-width: $on-palm) {
+    @content;
+  }
+}
+
+@mixin media-not-on-palm() {
+  @media not screen and (max-width: $on-palm) {
+    @content;
+  }
+}
+
+@mixin media-full-size() {
+  @media screen and (min-width: $on-large) {
     @content;
   }
 }

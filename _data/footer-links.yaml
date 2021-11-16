@@ -1,0 +1,32 @@
+- name: Paul C. Scharf
+  items:
+  - link: /about
+    title: About Me
+  - link: /consulting
+    title: Consulting
+  - link: https://www.linkedin.com/in/pscharf/
+    title: LinkedIn
+    icon: linkedin
+  - link: https://github.com/amulware
+    title: GitHub
+    icon: github
+  - link: mailto:paul@paulscharf.com
+    title: paul@paulscharf.com
+
+- name: Writing
+  items:
+  - link: https://genericgamedev.com
+    title: GameDev&lt;T&gt; Blog
+  - link: https://toggl.com/blog/author/paul-scharf
+    title: Posts on Toggl.com
+
+- name: Programming
+  items:
+  - link: https://rochefusion.com
+    title: Roche Fusion
+  - link: https://github.com/beardgame
+    title: C# Utility and Game Libraries
+  - link: https://github.com/beardgame/td
+    title: Open Source Tower Defense
+  - link: https://github.com/amulware/amulware.github.io
+    title: amulware.github.io

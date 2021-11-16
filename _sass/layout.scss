@@ -1,41 +1,130 @@
-/**
-* Site header
-*/
-.site-header {
-  border-top: 5px solid $border-color-03;
-  border-bottom: 1px solid $border-color-01;
-  min-height: $spacing-unit * 1.865;
-  line-height: $base-line-height * $base-font-size * 2.25;
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+$title-font-size: 5.75vw * 1.25;
+$max-title-font-size: 3.2em * 1.25;
+
+
+.body-wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  @include media-not-on-palm {
+    padding: 0 $spacing-unit;
+  }
+}
+.wrapper {
+  @extend %clearfix;
 }
 
-.site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
 
-  @include media-query($on-palm) {
-    padding-right: 45px;
+.site-header {
+  // Positioning context for the mobile navigation icon
+  position: relative;
+
+  @include media-not-on-palm {
+    margin-top: $spacing-unit;
+    height: calc(#{$spacing-unit} + #{$title-font-size});
+  }
+  @include media-full-size {
+    height: calc(#{$spacing-unit} + #{$max-title-font-size});
   }
 
-  &,
-  &:visited {
-    color: $site-title-color;
+  .wrapper {
+    @include media-on-palm {
+      padding: 0;
+    }
+    @include media-not-on-palm {
+      //padding-right: calc( #{$spacing-unit} / 2 + 100% - #{$side-bar-width});
+      width: #{$side-bar-width};
+      float: left;
+    }
+  }
+}
+
+main {
+  @include media-not-on-palm {
+    margin-left: $side-bar-width;
+  }
+}
+
+.page-content {
+  flex: 1 0 auto;
+  position: relative;
+
+  .wrapper {
+    padding-left: $spacing-unit / 2;
+    @include media-on-palm {
+      padding-right: $spacing-unit / 2;
+      padding-top: $spacing-unit / 4;
+    }
+  }
+}
+
+.avatar {
+  background-color: $sol-mono2;
+  background-image: url("avatar.jpg");
+  background-size: 115%;
+  background-position: center;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  display:block;
+  transition: border-radius 0.25s;
+  
+  @include media-on-palm {
+    padding-top: 75%;
+    border-radius: 0;
+    background-position: top center;
+  }
+  @include media-not-on-palm {
+    margin-top: calc(#{$spacing-unit} + #{$title-font-size});
+  }
+  @include media-full-size {
+    margin-top: calc(#{$spacing-unit} + #{$max-title-font-size});
+  }
+}
+
+
+.site-title {
+  display: block;
+  position: absolute;
+  font-weight: 300;
+  letter-spacing: -1px;
+  font-size: $title-font-size;
+  white-space: nowrap;
+  max-width: 100%;
+  margin: 0;
+
+  @include media-on-palm {
+    padding-left: $spacing-unit / 2;
+    bottom: 0;
+    &, &:visited {
+      color: $sol-base3;
+    }
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+    font-size: 2.5em;
+  }
+  @include media-not-on-palm {
+    top: 0;
+
+    &, &:visited {
+      color: $site-title-color;
+    }
+  }
+  @include media-full-size {
+    font-size: $max-title-font-size;
   }
 }
 
 .site-nav {
   position: absolute;
-  top: 9px;
+  top: $spacing-unit / 2;
   right: $spacing-unit / 2;
   background-color: $background-color;
   border: 1px solid $border-color-01;
   border-radius: 5px;
-  text-align: right;
+  text-align: left;
+  z-index: 1;
+  color: $brand-color;
 
   .nav-trigger {
     display: none;
@@ -70,25 +159,38 @@
 
   input:checked ~ .trigger {
     display: block;
-    padding-bottom: 5px;
   }
 
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-    display: block;
-    padding: 5px 10px;
+  h3 {
+    margin: 0;
+    margin-top: 15px;
+  }
 
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 0;
+  ul {
+    list-style-type: none;
+    margin-left: $spacing-unit / 4;
+  }
+
+  @include media-on-palm {
+    h3:first-of-type {
+      margin-top: 0;
+      position:absolute;
+      top: $spacing-unit / 4;
     }
-    margin-left: 20px;
+    h3 {
+      padding-left: $spacing-unit / 4;
+    }
+    a {
+      padding: 5px 10px;
+      line-height: $base-line-height;
+      display: block;
+    }
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
-  @media screen and (min-width: $on-medium) {
+  @include media-not-on-palm {
     position: static;
-    float: right;
     border: none;
     background-color: inherit;
 
@@ -103,15 +205,9 @@
     input ~ .trigger {
       display: block;
     }
-
-    .page-link {
-      display: inline;
-      padding: 0;
-
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
-      margin-left: auto;
+    
+    a {
+      padding: 5px 0;
     }
   }
 }
@@ -124,6 +220,13 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+  margin: $spacing-unit / 2 0;
+  
+  .wrapper {
+    padding: 0 $spacing-unit / 2;
+  }
+
+  
 }
 
 .footer-heading {
@@ -160,7 +263,7 @@
   width: calc(100% - (#{$spacing-unit} / 2));
 }
 
-@media screen and (min-width: $on-large) {
+@include media-full-size {
   .footer-col-1 {
     width: calc(35% - (#{$spacing-unit} / 2));
   }
@@ -174,9 +277,9 @@
   }
 }
 
-@media screen and (min-width: $on-medium) {
+@include media-not-on-palm {
   .footer-col-wrapper {
-    display: flex
+    display: flex;
   }
 
   .footer-col {
@@ -200,10 +303,7 @@
 /**
   * Page content
   */
-.page-content {
-  padding: $spacing-unit 0;
-  flex: 1 0 auto;
-}
+
 
 .page-heading {
   @include relative-font-size(2);
@@ -231,8 +331,6 @@
   display: block;
   @include relative-font-size(1.5);
 }
-
-
 
 /**
   * Posts
@@ -339,4 +437,35 @@
   .one-half {
     width: calc(50% - (#{$spacing-unit} / 2));
   }
+}
+
+
+.cta {
+  padding: $spacing-unit / 4 calc((#{$spacing-unit}) / 4 + 4px);
+  padding-bottom: calc((#{$spacing-unit}) / 4 + 2px);
+  border-radius: $spacing-unit;
+
+  background-color: $sol-mono2;
+  transition: background-color 0.25s;
+}
+.cta:hover {
+  color: $sol-mono3;
+  text-decoration: none;
+
+  background-color: $sol-blue;
+  background-image: radial-gradient(circle at 50% ,  $sol-blue var(--p), $sol-mono2 var(--p));
+  animation: cta-circle 0.25s ease 1 normal forwards;
+}
+@keyframes cta-circle {
+  0% {
+    --p:0%;
+  }
+  100% {
+    --p:100%;
+  }
+}
+@property --p {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
 }
