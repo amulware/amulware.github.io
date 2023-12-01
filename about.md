@@ -4,9 +4,9 @@ layout: page
 
 # About Me
 
-Hi, I'm Paul. Dad, programmer at heart, engineering leader by calling, and dungeon master during the night.
+Hi, I'm Paul. Dad out of love for people, programmer at heart, engineering leader by calling, and [dungeon master](https://en.wikipedia.org/wiki/Dungeon_Master "Dungeon what?") at night for my fondness of telling stories.
 
-I've lived in three different countries, hold degrees in computer science and mathematics and am passionate about the application of software engineering principles, leadership, remote work, mentoring and storytelling.
+I've lived in three different countries, hold degrees in computer science and mathematics and am passionate about the application of software engineering principles, leadership, remote work, design, mentoring and storytelling.
 
 When I'm not busy writing code or preparing for my next session of Dungeons & Dragons I spend my free time dabbling in physics, psychology, philosophy, and cooking.
 
@@ -34,22 +34,22 @@ Later, I joined [Toggl](https://toggl.com/mission/ "About Toggl") as a developer
 
 Focussing on building relationships and developing high-quality software that solves real problems at sustained velocity, my approach can be broadly summarised as a mix between [Extreme Ownership](https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs/dp/1250067057 "Extreme Ownership on Amazon") and the [Agile Manifesto](https://agilemanifesto.org/ "The Agile Manifesto"). The details of course highly depend on the situation.
 
-Through many trials, and some significant errors, I now lead Toggl's engineering department where I am responsible for the company's technical direction and strategy, implementation of our company and product vision and the development of our developers, engineering leaders, and engineering culture.
+Through many trials, and some significant errors, I came to lead Toggl's engineering department where I was responsible for the company's technical direction and strategy, implementation of our company and product vision and the development of our developers, engineering leaders, and engineering culture.
 
 
 ## Mentor
 
 From tutoring in high school to being a teaching assistant and lecturing at university, I've always enjoyed sharing my knowledge and experiences of things I'm passionate about.
 
-Since then I've written a number of blog posts on [technical](https://genericgamedev.com/ "GameDev&lt;T&gt; blog") and [non-technical matters](https://toggl.com/blog/author/paul-scharf "My posts on toggl.com/blog"). I've also been [interviewed for the BBC](https://www.bbc.com/worklife/article/20210810-why-hyper-organisation-can-backfire "Why hyper-organisation can backfire - BBC Worklife") on how I organise my time in a remote-work setting.
+Since then I've written a number of blog posts on [technical](https://genericgamedev.com/ "GameDev&lt;T&gt; blog") and [non-technical matters](https://toggl.com/blog/author/paul-scharf "My posts on toggl.com/blog"). I've also been [interviewed for the BBC](https://www.bbc.com/worklife/article/20210810-why-hyper-organisation-can-backfire "Why hyper-organisation can backfire - BBC Worklife") on how I organise my time in a remote-work setting and am an active member of the [Running Remote community](http://runningremote.com/ "Running Remote") for remote leaders and executives.
 
-Professionally, I've focussed on enabling and empowering others to succeed with as little help from me as possible for years. I have regular one-on-one chats with my leadership team and many other colleagues and mentor and guide them towards succeeding with their team.
+Professionally, I've focussed on enabling and empowering others to succeed with as little help from me as possible for years. I have regular one-on-one chats with my leadership teams, from leaders of small teams to director-level managers, and many other colleagues and mentor and guide them towards succeeding with their team.
 
 I specifically focus on growing leadership skills in those around me and on promoting an engineering culture of high quality and constant improvement. I prepare and give regular presentations and workshops around these topics to reach as many people as possible while also deepening my own knowledge through research.
 
-I guide my team of leaders to be as independent as they can when translating company vision and mission into more concrete strategies and plans. Through improving their understanding of where we are going as a company, I make sure that they can make the best decisions possible day-to-day without the need for any micromanagement. This makes their teams much more efficient and significantly increases ownership and motivation of all team members.
+I guide my teams of leaders to be as independent as they can when translating company vision and mission into more concrete strategies and plans. Through improving their understanding of where we are going as a company, I make sure that they can make the best decisions possible day-to-day without the need for micromanagement. This makes their teams much more efficient and significantly increases ownership and motivation of all team members.
 
-Through these activities, I've been helping many individuals become more effective leaders and their teams to be more productive.
+Through these activities, I've been helping many individuals become more effective engineers and leaders, and their teams to be more productive.
 
 Are you or your team looking to improve your leadership skills or engineering culture? I'd be happy to have a chat and see if I could help you with that.
 
