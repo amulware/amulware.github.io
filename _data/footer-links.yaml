@@ -17,8 +17,6 @@
   items:
   - link: https://genericgamedev.com
     title: GameDev&lt;T&gt; Blog
-  - link: https://toggl.com/blog/author/paul-scharf
-    title: Posts on Toggl.com
 
 - name: Programming
   items:
@@ -27,6 +25,6 @@
   - link: https://github.com/beardgame
     title: C# Utility and Game Libraries
   - link: https://github.com/beardgame/td
-    title: Open Source Tower Defense
+    title: Open Source Tower Defence
   - link: https://github.com/paulcscharf/paulcscharf.github.io
     title: Code of this site
