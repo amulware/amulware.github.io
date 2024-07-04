@@ -1,5 +1,6 @@
 ---
-layout: ""
+layout: empty
+link: ${{ secrets.MEET_SCHEDULE_LINK }}
 ---
 
 <!DOCTYPE html>
@@ -7,6 +8,6 @@ layout: ""
   <head>
   </head>
   <body>
-    <iframe src="{{ secrets.MEET_SCHEDULE_LINK }}" title="Schedule a call with Paul"></iframe>
+    <iframe src="{{ link }}" title="Schedule a call with Paul"></iframe>
   </body>
 </html>
