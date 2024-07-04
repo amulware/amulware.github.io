@@ -1,8 +1,7 @@
 ---
 layout: empty
-link: ${{ secrets.MEET_SCHEDULE_LINK }}
 ---
 
 <body>
-  <iframe src="{{ layout.link }}" title="Schedule a call with Paul"></iframe>
+  <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ09gtjHpi8LoMKMFceuxD9Y_oUkVgrffjuh0mCucn2sfUGGwjT6ceYe26ai6ZIxG9JjfQh8KhNC?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
 </body>
